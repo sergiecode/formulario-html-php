@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+
+<!-- Formulario HTML -->
+<form action="http://localhost:8080" method="get">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" required><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" required><br>
+
+    <label>Situación Laboral:</label>
+    <input type="radio" name="situacion-laboral" value="Empleado"> Empleado
+    <input type="radio" name="situacion-laboral" value="Desempleado"> Desempleado
+    <input type="radio" name="situacion-laboral" value="Estudiante"> Estudiante<br>
+
+    <label>Tecnologías:</label>
+    <input type="checkbox" name="tecnologias[]" value="PHP"> PHP
+    <input type="checkbox" name="tecnologias[]" value="HTML"> HTML
+    <input type="checkbox" name="tecnologias[]" value="CSS"> CSS
+    <input type="checkbox" name="tecnologias[]" value="JavaScript"> JavaScript<br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
